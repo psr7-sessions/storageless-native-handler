@@ -1,0 +1,42 @@
+{
+  "name":        "psr7-sessions/storageless-native-handler",
+  "description": "Storageless native handler session support",
+  "license":     "MIT",
+  "authors": [
+    {
+      "name":     "Marco Pivetta",
+      "email":    "ocramius@gmail.com",
+      "homepage": "http://ocramius.github.io/",
+      "role":     "Developer"
+    },
+    {
+      "name":  "Jefersson Nathan",
+      "email": "malukenho@phpse.net",
+      "role":  "Developer"
+    },
+    {
+      "name":  "Luís Otávio Cobucci Oblonczyk",
+      "email": "lcobucci@gmail.com",
+      "role":  "Developer"
+    }
+  ],
+  "require": {
+    "php": "~7.0",
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.0"
+  },
+  "replace": {
+    "ocramius/psr7-session": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "PSR7Sessions\\Storagelles\\SessionHandler\\": "src/StoragelessSessionHandler"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PSR7SessionsTest\\Storageless\\SessionHandler\\": "test/StoragelessSessionHandlerTest"
+    }
+  }
+}
