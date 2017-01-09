@@ -22,6 +22,7 @@
   ],
   "require": {
     "php": "~7.0",
+    "psr7-sessions/storageless": "^2.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.0"
@@ -31,12 +32,12 @@
   },
   "autoload": {
     "psr-4": {
-      "PSR7Sessions\\Storagelles\\SessionHandler\\": "src/StoragelessSessionHandler"
+      "PSR7SessionsHandler\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PSR7SessionsTest\\Storageless\\SessionHandler\\": "test/StoragelessSessionHandlerTest"
+      "PSR7SessionsHandlerTest\\": "test/"
     }
   }
 }
